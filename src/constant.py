@@ -1,6 +1,13 @@
 import os
 
 
+class DirectionConstant:
+    NE = [1, 1]
+    E = [0, 1]
+    SE = [-1, 1]
+    S = [-1, 0]
+
+
 class ColorConstant:
     RED = "RED"
     BLUE = "BLUE"
