@@ -19,6 +19,11 @@ class Heuristic:
         ]
 
     def count_player(self, i: int, j: int, player_choice: int, direction: str) -> int:
+        """
+        [DESC]
+            Menghitung jumlah piece yang berurutan dari baris `i` dan kolom `j`
+            ke arah `S`, `SE`, `E`, atau `NE` untuk pemain bernomor `player_choice`
+        """
         board = self.state.board
         player = self.state.players[player_choice]
 
@@ -63,6 +68,10 @@ class Heuristic:
         return 0
 
     def value(self, player_choice: int) -> int:
+        """
+        [PARAMS]
+            player_choice: our player number
+        """
         values = [0, 0]
         board = self.state.board
 
